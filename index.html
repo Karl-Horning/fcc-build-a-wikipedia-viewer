@@ -1,78 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Build a Wikipedia Viewer</title>
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="search-background">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="javascript:window.location.href=window.location.href"><i class="fa fa-free-code-camp"></i></a>
-          </div>
+    <head>
+        <meta charset="utf-8" />
+        <title>Build a Wikipedia Viewer</title>
+        <link rel="stylesheet" href="./src/css/jquery-ui.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./src/css/styles.css" />
+    </head>
+    <body>
+        <div class="search-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a
+                            href="javascript:window.location.href=window.location.href"
+                            ><i class="fa fa-free-code-camp"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <form onsubmit="return false">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-6">
+                            <input
+                                id="q"
+                                class="form-control"
+                                type="text"
+                                placeholder="Search Wikipedia for..."
+                                maxlength="1000"
+                                value=""
+                                autocomplete="off"
+                                autofocus="on"
+                                tabindex="1"
+                                required
+                            />
+                        </div>
+
+                        <div class="col-md-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-3">
+                            <input
+                                id="btn-search"
+                                class="btn-block"
+                                type="submit"
+                                value="Search Wikipedia"
+                                tabindex="2"
+                            />
+                        </div>
+
+                        <div class="col-md-3">
+                            <input
+                                id="btn-random"
+                                class="btn-block"
+                                type="button"
+                                value="Random Article"
+                                tabindex="3"
+                                onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','blank','resizable=yes')"
+                            />
+                        </div>
+
+                        <div class="col-md-3"></div>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <form onsubmit="return false">
-          <div class="row">
-            <div class="col-md-3">
+        <div class="wiki container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="wikiArticles"></ul>
+                </div>
             </div>
-
-            <div class="col-md-6">
-              <input id="q" class="form-control" type="text" placeholder="Search Wikipedia for..." maxlength="1000" value="" autocomplete="off" autofocus="on" tabindex="1" required>
-            </div>
-
-            <div class="col-md-3">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-            </div>
-
-            <div class="col-md-3">
-              <input id="btn-search" class="btn-block" type="submit" value="Search Wikipedia" tabindex="2">
-            </div>
-
-            <div class="col-md-3">
-              <input id="btn-random" class="btn-block" type="button" value="Random Article" tabindex="3" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','blank','resizable=yes')">
-            </div>
-
-            <div class="col-md-3">
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="wiki container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul id="wikiArticles">
-          </ul>
         </div>
-      </div>
-    </div>
 
-    <footer class="footer">
-      <div class="container text-center">
-        <small>
-          &copy;
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          <a href="https://codepen.io/karlhorning" target="_blank">Karl Horning</a>, All Rights Reserved
-        </small>
-      </div>
-    </footer>
+        <footer class="footer">
+            <div class="container text-center">
+                <small>
+                    &copy; 2019 -
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <a href="https://codepen.io/karlhorning" target="_blank"
+                        >Karl Horning</a
+                    >, All Rights Reserved
+                </small>
+            </div>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="./src/js/script.js"></script>
+    </body>
 </html>
