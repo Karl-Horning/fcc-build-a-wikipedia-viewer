@@ -1,119 +1,128 @@
 :root {
-  --light-blue: #6985b2;
+    --light-blue: #6985b2;
 }
 
 body {
-  color: #1f1f1f;
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-  font-weight: 400;
+    color: #1f1f1f;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
-h3, p, a {
-  margin: 5px 0;
+h3,
+p,
+a {
+    margin: 5px 0;
 }
 
 h3 {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 h3 a {
-  color: var(--light-blue);
-  font-weight: 400;
-  text-decoration: none;
+    color: var(--light-blue);
+    font-weight: 400;
+    text-decoration: none;
 }
 
 h3 a:hover {
-  color: var(--light-blue);
+    color: var(--light-blue);
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.4em;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
 
-a, a:hover {
-  color: var(--light-blue);
+a,
+a:hover {
+    color: var(--light-blue);
 }
 
 li {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 .search-background {
-  margin-top: 15%;
+    margin-top: 15%;
 }
 
 form {
-  padding: 30px 0 10px;
+    padding: 30px 0 10px;
 }
 
-input[type=text] {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2px 0 rgba(0, 0, 0, 0.19);
-  font-size: 1.2em;
-  height: 40px;
-  margin-bottom: 20px;
-  padding: 25px 6px;
+input[type="text"] {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+        0 1.5px 2px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.2em;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 25px 6px;
 }
 
-input[type=submit], #btn-random {
-  background:var(--light-blue);
-  border:0 none;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 10px 10px;
+input[type="submit"],
+#btn-random {
+    background: var(--light-blue);
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
 }
 
-input[type=submit]:hover, #btn-random:hover {
-  background: var(--light-blue);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 2px 0 rgba(0, 0, 0, 0.19);
+input[type="submit"]:hover,
+#btn-random:hover {
+    background: var(--light-blue);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+        0 1.5px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
-textarea:focus, input[type="text"]:focus {
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  outline: 0 none;
+textarea:focus,
+input[type="text"]:focus {
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    outline: 0 none;
 }
 
-textarea:hover, input[type="text"]:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  outline: 0 none;
+textarea:hover,
+input[type="text"]:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    outline: 0 none;
 }
 
 .fa {
-  color: #fff;
-  font-size: 4em;
-  font-weight: bold;
-  margin-top: 20px;
-  text-shadow: 2px 2px #CCC6CC;
-  -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #6d8cbd;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px #ccc6cc;
+    -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #6d8cbd;
 }
 
 .url {
-  color: #48b848;
+    color: #48b848;
 }
 
 .form-control {
-  border-radius: 1px;
+    border-radius: 1px;
 }
 
 .ui-widget {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
-  font-size: 1.1em;
-  line-height: 1em;
-  padding: 6px 0;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 6px 0;
 }
 
 .ui-widget.ui-widget-content {
-  border-color: #888;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  outline: 0 none;
+    border-color: #888;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    outline: 0 none;
 }
 
 .ui-state-active,
@@ -122,10 +131,18 @@ textarea:hover, input[type="text"]:hover {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: none;
-	background: #ddd;
-	font-weight: normal;
-	color: #000;
-  margin: -16px 0;
-  padding: 19px 7px;
+    border: none;
+    background: #ddd;
+    font-weight: normal;
+    color: #000;
+    margin: -16px 0;
+    padding: 19px 7px;
+}
+
+input[type="submit"]:hover,
+#btn-random:hover {
+    background: var(--light-blue);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2),
+        0 1.5px 2px 0 rgba(0, 0, 0, 0.19);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
