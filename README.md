@@ -33,7 +33,7 @@ The Wikipedia Viewer is a web application that allows users to search for Wikipe
 
 ## Demo
 
-View the live demo on CodePen: [freeCodeCamp: Build a Technical Documentation Page](https://codepen.io/karlhorning/pen/pxgybR).
+View the live demo on CodePen: [freeCodeCamp: Build a Wikipedia Viewer](https://codepen.io/karlhorning/pen/NdWjOY).
 
 ## Installation
 
