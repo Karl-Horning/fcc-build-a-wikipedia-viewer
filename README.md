@@ -2,11 +2,11 @@
 
 This project is a Wikipedia Viewer developed for the freeCodeCamp challenge 'Build a Wikipedia Viewer'.
 
-![Wikipedia Viewer](./src/img/wikipedia-viewer.png "Wikipedia Viewer example")
+![Wikipedia Viewer](./src/img/wikipedia-viewer.gif "Wikipedia Viewer example")
+
 ## Table of Contents
 
 - [Description](#description)
-- [Preview](#preview)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
@@ -19,10 +19,6 @@ This project is a Wikipedia Viewer developed for the freeCodeCamp challenge 'Bui
 ## Description
 
 The Wikipedia Viewer is a web application that allows users to search for Wikipedia articles and view the search results. It provides a simple interface for searching, displaying relevant articles, and viewing more details on Wikipedia.
-
-## Preview
-
-![Wikipedia Viewer](./src/img/wikipedia-viewer.gif "Wikipedia Viewer example")
 
 ## Features
 
